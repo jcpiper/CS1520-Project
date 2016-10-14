@@ -27,6 +27,22 @@ nav > ul > li > a:hover {
   background-color: whitesmoke;
 }
 
+nav a {
+  color: black;
+}
+
+nav a:hover {
+  color: cornflowerblue;
+}
+
 section {
   margin-top: 3rem;
+}
+
+h3 > a {
+  color: dimgrey;
+}
+
+h3 > a:hover {
+  color: cornflowerblue;
 }

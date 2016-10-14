@@ -10,26 +10,26 @@
 	<!-- add links to external style-sheets and .js -->
 </head>
 <body>
-	<header>
+	<header id="navBar">
 		<!-- nav guide goes here -->
 		<nav>
 			<ul>
 				<li>
-					<a href="">About</a>
+					<a href="#about">About</a>
 				</li>
 				<li>
-					<a>Projects</a>
+					<a href="#project">Projects</a>
 				</li>
 				<li>
-					<a>Interests</a>
+					<a href="#books">Book Recommendations</a>
 				</li>
 				<li>
-					<a>Contact</a>
+					<a href="#mailingList">Mailing List</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<section>
+	<section id="about">
 		<h1>About</h1>
 		<p>
 			Hi there. I'm Justin Piper, a senior at the University of Pittsburgh pursuing a Bachelor's of Science in Bioinformatics.
@@ -41,13 +41,17 @@
 			board. My favorite sport is baseball, but I also enjoy football, hockey, basketball, and golf.
 		</p>
 	</section>
-	<section>
-		<h1>Projects</h1>
-		<p>
-			I have worked on a number of projects over my collegiate years. Pls add more info, with a little blurb about each here.
-		</p>
+	<section id="project">
+		<h1>Project</h1>
+    <h3><a href="https://rescert.bio.pitt.edu/cert_data/">Certificate in Life Sciences Research</a></h3>
+    <p>
+      In the summer of 2015 I was fortunate enough to be employed by the Biology Department here at Pitt. My job was to
+      build a website for the research certificate offered by the department. This site handles student applications, allows
+      the current administrator to easily update program requirements, and allows professors to view and approve work submitted
+      by their students.
+    </p>
 	</section>
-	<section>
+	<section id="books">
 		<h1>Book Recommendations</h1>
 		<p>
       I like to describe myself as an avid reader, though unfortunately I often don't have time to read as much as
@@ -58,51 +62,75 @@
       Sci-Fi
     </h3>
     <ul>
+      <!--add pics of each author that appear on mouse over-->
       <li>
-        The Foundation Trilogy - Isaac Asimov
+				<p id="asimov">
+					The Foundation Trilogy - Isaac Asimov
+				</p>
       </li>
       <li>
-        The Familiar, Vol. One: One Rainy Day in May - Mark Danielewski
+				<p id="mark">
+					The Familiar, Vol. One: One Rainy Day in May - Mark Danielewski
+				</p>
       </li>
-      <li>
+      <li id="heinlein">
         Starship Troopers - Robert Heinlein
       </li>
     </ul>
     <h3>Graphic Novels</h3>
     <ul>
-      <li>
+      <li id="moore1">
         Watchmen - Alan Moore
       </li>
-      <li>
+      <li id="moore">
         V for Vendetta - Alan Moore
       </li>
     </ul>
     <h3>Western</h3>
     <ul>
-      <li>
+      <li id="portis">
         True Grit - Charles Portis
       </li>
-      <li>
+      <li id="proulx">
         Close Range: Wyoming Stories - Annie Proulx
       </li>
-      <li>
+      <li id="alexie">
         The Lone Ranger and Tonto Fistfight in Heaven - Sherman Alexie
       </li>
     </ul>
 	</section>
-	<section>
-		<h1>Contact</h1>
-		<form action="get" action="/">
-			<!--
-				form contents go here
-			-->
+	<section id="mailingList">
+    <p id="errorMessage"></p>
+		<h1>Sign up to join my mailing list!</h1>
+		<form action="get" action="/" id="contactList" onsubmit="return verify()">
+			<fieldset class="generalInputs">
+				<div>
+					<label for="firstName">First Name</label>
+					<input type="text" name="First Name" placeholder="John" id="firstName"/>
+				</div>
+				<div>
+					<label for="lastName">Last Name</label>
+					<input type="text" name="Last Name" placeholder="Doe" id="lastName"/>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="Email" placeholder="example@gmail.com" id="email"/>
+				</div>
+				<div>
+					<input type="submit" value="Submit"/>
+				</div>
+			</fieldset>
 		</form>
 	</section>
 	<footer>
     <p>
       <a href="mailto:jcp68@pitt.edu">Justin Piper</a>
     </p>
+    <p>
+      Disclaimer: I do not actually have a mailing list
+    </p>
 		&copy;2016
 	</footer>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
