@@ -32,6 +32,27 @@ var proulx = document.getElementById("proulx");
 var cntProulx = 0;
 proulx.addEventListener("mouseover", proulxFunction); 
 
+var asimov = document.getElementById("asimov");
+var cntAsimov = 0;
+asimov.addEventListener("mouseover", asimovFunction); 
+
+function asimovFunction(){ 
+	if(cntMark < 1){
+		var pic = document.createElement("img");
+  pic.src = "./images/asimov.jpg";
+  pic.alt = "Isaac Asimov";
+  pic.height = 75;
+  pic.width = 75;
+
+
+  asimov.appendChild(pic);
+	cntAsimov += 1;
+	}
+	else {
+		return;
+	}
+}
+
 function markFunction(){ 
 	if(cntMark < 1){
 		var pic = document.createElement("img");
@@ -40,7 +61,6 @@ function markFunction(){
   pic.height = 75;
   pic.width = 75;
 
-  console.log("Hello again!");
 
   mark.appendChild(pic);
 	cntMark += 1;
@@ -58,7 +78,6 @@ function heinFunction(){
   pic.height = 75;
   pic.width = 75;
 
-  console.log("Hello again!");
 
   hein.appendChild(pic);
 	cntHein += 1;
@@ -84,6 +103,7 @@ function mooreFunction(){
 		return;
 	}
 }
+
 function moore1Function(){ 
 	if(cntMoore1 < 1){
 		var pic = document.createElement("img");
@@ -100,7 +120,21 @@ function moore1Function(){
 	}
 }
 
+function portisFunction(){ 
+	if(cntPortis < 1){
+		var pic = document.createElement("img");
+  pic.src = "./images/portis.jpe";
+  pic.alt = "Charles Portis";
+  pic.height = 75;
+  pic.width = 75;
 
+  portis.appendChild(pic);
+	cntPortis += 1;
+	}
+	else {
+		return;
+	}
+}
 
 
 // Thanks to stackoverflow users dash and jessegavin for the idea on implementing the show_pic function
