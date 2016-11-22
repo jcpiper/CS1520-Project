@@ -35,8 +35,8 @@ var asimov = document.getElementById("asimov");
 var cntAsimov = 0;
 asimov.addEventListener("mouseover", asimovFunction); 
 
-function asimovFunction(){ 
-	if(cntAsimov < 1){
+function asimovFunction() {
+	if (cntAsimov < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/asimov.jpg";
     pic.alt = "Isaac Asimov";
@@ -52,8 +52,8 @@ function asimovFunction(){
 	}
 }
 
-function markFunction(){ 
-	if(cntMark < 1){
+function markFunction() {
+	if (cntMark < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/danielewski.jpeg";
     pic.alt = "Mark Danielweski";
@@ -68,8 +68,8 @@ function markFunction(){
 	}
 }
 
-function heinFunction(){ 
-	if(cntHein < 1){
+function heinFunction() {
+	if (cntHein < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/heinlein.png";
     pic.alt = "Robert Heinlein";
@@ -86,8 +86,8 @@ function heinFunction(){
 }
 
 
-function mooreFunction(){ 
-	if(cntMoore < 1){
+function mooreFunction() {
+	if (cntMoore < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/moore.jpg";
     pic.alt = "Alan Moore";
@@ -102,8 +102,8 @@ function mooreFunction(){
 	}
 }
 
-function moore1Function(){ 
-	if(cntMoore1 < 1){
+function moore1Function() {
+	if (cntMoore1 < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/moore1.jpg";
     pic.alt = "Alan Moore";
@@ -118,8 +118,8 @@ function moore1Function(){
 	}
 }
 
-function portisFunction(){ 
-	if(cntPortis < 1){
+function portisFunction() {
+	if (cntPortis < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/portis.jpe";
     pic.alt = "Charles Portis";
@@ -134,8 +134,8 @@ function portisFunction(){
 	}
 }
 
-function alexFunction(){ 
-	if(cntAlex < 1){
+function alexFunction() {
+	if (cntAlex < 1) {
 		var pic = document.createElement("img");
     pic.src = "./images/alexie.jpg";
     pic.alt = "Sherman Alexie";
@@ -151,7 +151,7 @@ function alexFunction(){
 }
 
 function proulxFunction() {
-  if(cntProulx < 1){
+  if (cntProulx < 1) {
     var pic = document.createElement("img");
     pic.src = "./images/proulx.jpe";
     pic.alt = "Annie Proulx";
@@ -167,5 +167,3 @@ function proulxFunction() {
 }
 
 // Thanks to stackoverflow users dash and jessegavin for the idea on implementing the show_pic function
-
-

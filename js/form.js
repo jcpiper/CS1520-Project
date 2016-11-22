@@ -12,11 +12,11 @@ function verify(){
   var wrong = [];
   var miss = false;
 
-  if (title.value == null || title.value == ""){
+  if (title.value == null || title.value == "") {
     wrong.push(title.name);
     miss = true;
   }
-  if (fname.value == null || fname.value == ""){
+  if (fname.value == null || fname.value == "") {
     wrong.push(fname.name);
     miss = true;
   }
@@ -31,7 +31,7 @@ function verify(){
     miss = true;
   }
 
-  if(wrong.length > 0) {
+  if (wrong.length > 0) {
     document.getElementById("errorMessage").innerHTML="Missing " + wrong.toString();
   }
 
