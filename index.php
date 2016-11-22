@@ -11,7 +11,6 @@
 	<meta name="author" content="Justin Piper">
 	<title>Justin Piper</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
-	<!-- add links to external style-sheets and .js -->
 </head>
 <body>
 	<?php
@@ -24,7 +23,6 @@
 	?>
 
 	<header id="navBar">
-		<!-- nav guide goes here -->
 		<nav>
 			<ul>
 				<li>
@@ -163,8 +161,6 @@
           endif;
           echo "<p>" . $book["title"] . " - " . $book["author_firstName"] ." " . $book["author_lastName"] . "</p>";
         }
-      else:
-        echo "<p>No rows</p>";
       endif;
     ?>
   </section>
