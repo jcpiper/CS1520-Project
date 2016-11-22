@@ -99,29 +99,41 @@
 					The Familiar, Vol. One: One Rainy Day in May - <a href=<?php echo "\"". $amazon["mark"] . "\", " . $tab; ?>>Mark Danielewski</a>
 				</p>
       </li>
-      <li id="heinlein">
-        Starship Troopers - <a href=<?php echo "\"". $amazon["heinlein"] . "\", " . $tab; ?>>Robert Heinlein</a>
+      <li>
+        <p id="heinlein">
+          Starship Troopers - <a href=<?php echo "\"". $amazon["heinlein"] . "\", " . $tab; ?>>Robert Heinlein</a>
+        </p>
       </li>
     </ul>
     <h3>Graphic Novels</h3>
     <ul>
-      <li id="moore1">
-        Watchmen - <a href=<?php echo "\"". $amazon["watch"] . "\", " . $tab; ?>>Alan Moore</a>
+      <li>
+        <p id="moore1">
+          Watchmen - <a href=<?php echo "\"". $amazon["watch"] . "\", " . $tab; ?>>Alan Moore</a>
+        </p>
       </li>
-      <li id="moore">
-        V for Vendetta - <a href=<?php echo "\"". $amazon["v"] . "\", " . $tab; ?>>Alan Moore</a>
+      <li>
+        <p id="moore">
+          V for Vendetta - <a href=<?php echo "\"". $amazon["v"] . "\", " . $tab; ?>>Alan Moore</a>
+        </p>
       </li>
     </ul>
     <h3>Western</h3>
     <ul>
-      <li id="portis">
-        True Grit - <a href=<?php echo "\"". $amazon["portis"] . "\", " . $tab; ?>>Charles Portis</a>
+      <li>
+        <p id="portis">
+          True Grit - <a href=<?php echo "\"". $amazon["portis"] . "\", " . $tab; ?>>Charles Portis</a>
+        </p>
       </li>
-      <li id="proulx">
-        Close Range: Wyoming Stories - <a href=<?php echo "\"". $amazon["proulx"] . "\", " . $tab; ?>>Annie Proulx</a>
+      <li>
+        <p id="proulx">
+          Close Range: Wyoming Stories - <a href=<?php echo "\"". $amazon["proulx"] . "\", " . $tab; ?>>Annie Proulx</a>
+        </p>
       </li>
-      <li id="alexie">
-        The Lone Ranger and Tonto Fistfight in Heaven - <a href=<?php echo "\"". $amazon["alexie"] . "\", " . $tab; ?>>Sherman Alexie</a>
+      <li>
+        <p id="alexie">
+          The Lone Ranger and Tonto Fistfight in Heaven - <a href=<?php echo "\"". $amazon["alexie"] . "\", " . $tab; ?>>Sherman Alexie</a>
+        </p>
       </li>
     </ul>
 	</section>
@@ -186,9 +198,6 @@
 	<footer>
     <p>
       <a href="mailto:jcp68@pitt.edu">Justin Piper</a>
-    </p>
-    <p>
-      Disclaimer: I do not actually have a mailing list
     </p>
 		&copy;2016
 	</footer>
