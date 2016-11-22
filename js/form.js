@@ -5,24 +5,30 @@
 var form = document.getElementById("contactList");
 
 function verify(){
-  var fname = form.elements["First Name"];
-  var lname = form.elements["Last Name"];
-  var email = form.elements["Email"];
+  var title = form.elements[0];
+  var fname = form.elements[1];
+  var lname = form.elements[2];
+  var genre = form.elements[3];
   var wrong = [];
   var miss = false;
+
+  if (title.value == null || title.value == ""){
+    wrong.push(title.name);
+    miss = true;
+  }
   if (fname.value == null || fname.value == ""){
-    wrong.add(fname.name);
+    wrong.push(fname.name);
     miss = true;
   }
 
   if (lname.value == null || lname.value == "") {
-    wrong.add(lname.name);
+    wrong.push(lname.name);
     miss = true;
   }
 
-  if (email.value == null || email.value == "") {
-    wrong.add(email.name);
-    miss == true;
+  if (genre.value == null || genre.value == "") {
+    wrong.push(genre.name);
+    miss = true;
   }
 
   if(wrong.length > 0) {
