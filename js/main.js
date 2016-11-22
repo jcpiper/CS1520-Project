@@ -4,7 +4,6 @@
 var head = document.getElementById("navBar");
 
 var mark = document.getElementById("mark");
-// mark.addEventListener("mouseover", function(){"./images/danielewski.jpeg", "Mark Danielweski", mark);
 var cntMark = 0;
 mark.addEventListener("mouseover", markFunction); 
 
@@ -37,16 +36,16 @@ var cntAsimov = 0;
 asimov.addEventListener("mouseover", asimovFunction); 
 
 function asimovFunction(){ 
-	if(cntMark < 1){
+	if(cntAsimov < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/asimov.jpg";
-  pic.alt = "Isaac Asimov";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/asimov.jpg";
+    pic.alt = "Isaac Asimov";
+    pic.height = 75;
+    pic.width = 75;
 
 
-  asimov.appendChild(pic);
-	cntAsimov += 1;
+    asimov.appendChild(pic);
+    cntAsimov += 1;
 	}
 	else {
 		return;
@@ -56,14 +55,13 @@ function asimovFunction(){
 function markFunction(){ 
 	if(cntMark < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/danielewski.jpeg";
-  pic.alt = "Mark Danielweski";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/danielewski.jpeg";
+    pic.alt = "Mark Danielweski";
+    pic.height = 75;
+    pic.width = 75;
 
-
-  mark.appendChild(pic);
-	cntMark += 1;
+    mark.appendChild(pic);
+    cntMark += 1;
 	}
 	else {
 		return;
@@ -73,14 +71,14 @@ function markFunction(){
 function heinFunction(){ 
 	if(cntHein < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/heinlein.png";
-  pic.alt = "Robert Heinlein";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/heinlein.png";
+    pic.alt = "Robert Heinlein";
+    pic.height = 75;
+    pic.width = 75;
 
 
-  hein.appendChild(pic);
-	cntHein += 1;
+    hein.appendChild(pic);
+    cntHein += 1;
 	}
 	else {
 		return;
@@ -91,13 +89,13 @@ function heinFunction(){
 function mooreFunction(){ 
 	if(cntMoore < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/moore.jpg";
-  pic.alt = "Alan Moore";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/moore.jpg";
+    pic.alt = "Alan Moore";
+    pic.height = 75;
+    pic.width = 75;
 
-  moore.appendChild(pic);
-	cntMoore += 1;
+    moore.appendChild(pic);
+    cntMoore += 1;
 	}
 	else {
 		return;
@@ -107,13 +105,13 @@ function mooreFunction(){
 function moore1Function(){ 
 	if(cntMoore1 < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/moore1.jpg";
-  pic.alt = "Alan Moore";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/moore1.jpg";
+    pic.alt = "Alan Moore";
+    pic.height = 75;
+    pic.width = 75;
 
-  moore1.appendChild(pic);
-	cntMoore1 += 1;
+    moore1.appendChild(pic);
+    cntMoore1 += 1;
 	}
 	else {
 		return;
@@ -123,19 +121,50 @@ function moore1Function(){
 function portisFunction(){ 
 	if(cntPortis < 1){
 		var pic = document.createElement("img");
-  pic.src = "./images/portis.jpe";
-  pic.alt = "Charles Portis";
-  pic.height = 75;
-  pic.width = 75;
+    pic.src = "./images/portis.jpe";
+    pic.alt = "Charles Portis";
+    pic.height = 75;
+    pic.width = 75;
 
-  portis.appendChild(pic);
-	cntPortis += 1;
+    portis.appendChild(pic);
+    cntPortis += 1;
 	}
 	else {
 		return;
 	}
 }
 
+function alexFunction(){ 
+	if(cntAlex < 1){
+		var pic = document.createElement("img");
+    pic.src = "./images/alexie.jpg";
+    pic.alt = "Sherman Alexie";
+    pic.height = 75;
+    pic.width = 75;
+
+    alexie.appendChild(pic);
+    cntAlex += 1;
+	}
+	else {
+		return;
+	}
+}
+
+function proulxFunction() {
+  if(cntProulx < 1){
+    var pic = document.createElement("img");
+    pic.src = "./images/proulx.jpe";
+    pic.alt = "Annie Proulx";
+    pic.height = 75;
+    pic.width = 75;
+
+    proulx.appendChild(pic);
+    cntProulx += 1;
+  }
+  else {
+    return;
+  }
+}
 
 // Thanks to stackoverflow users dash and jessegavin for the idea on implementing the show_pic function
 

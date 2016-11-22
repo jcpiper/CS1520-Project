@@ -1,7 +1,7 @@
 html {
   text-align: justify;
   font-family: "Century Gothic", Georgia;
-  color: dimgray;
+  color: dimgrey;
 }
 
 
@@ -33,6 +33,19 @@ nav a {
 
 nav a:hover {
   color: cornflowerblue;
+}
+
+p > a {
+  color: black;
+  font-style: italic;
+}
+
+ul > li > p > a:hover {
+  color: cornflowerblue;
+}
+
+a:visited {
+  color: darkslategrey;
 }
 
 section {
