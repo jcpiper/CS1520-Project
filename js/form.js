@@ -5,10 +5,10 @@
 var form = document.getElementById("contactList");
 
 function verify(){
-  var title = form.elements[0];
-  var fname = form.elements[1];
-  var lname = form.elements[2];
-  var genre = form.elements[3];
+  var title = form.elements[1];
+  var fname = form.elements[2];
+  var lname = form.elements[3];
+  var genre = form.elements[4];
   var wrong = [];
   var miss = false;
 

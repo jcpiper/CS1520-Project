@@ -17,29 +17,24 @@ if($connection->connect_error):
   die('DB connection failed: ' . $connection->connect_error);
 endif;
 
-//$db = "Create db ReadingList";
+
+//$drop = "Drop table books";
 //
-//if ($connection->query($db)=== true):
-//  echo "database created";
-//else: echo "db creation failed";
+//if($connection->query($drop)===true):
+//  echo "Table dropped\n";
 //endif;
-$drop = "Drop table books";
-
-if($connection->query($drop)===true):
-  echo "Table dropped\n";
-endif;
-
-$table = "Create table books(
-  id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(50) not null,
-  genre VARCHAR(10),
-  author_firstName VARCHAR(20),
-  author_lastName VARCHAR(20)
-)";
-
-if ($connection->query($table) === true):
-  echo "Books table created";
-else:
-  echo "Table failed to build" . $connection->error;
-endif;
+//
+//$table = "Create table books(
+//  id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//  title VARCHAR(50) not null,
+//  genre VARCHAR(10),
+//  author_firstName VARCHAR(20),
+//  author_lastName VARCHAR(20)
+//)";
+//
+//if ($connection->query($table) === true):
+//  echo "Books table created";
+//else:
+//  echo "Table failed to build" . $connection->error;
+//endif;
 

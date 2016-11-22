@@ -123,9 +123,35 @@
     
       // add form submissions to the db
       // assume all form fields are completed
-      $insert = "insert into books values ('" . $_GET["Title"] . "', '" . $_GET["Genre"] . "', '" . $_GET["Author_First_Name"] . "', '" .$_GET["Author_Last_Name"] ."')";
-      echo $insert;
-    
+      if (!empty($_GET)):
+        $insert = "insert into books (title, genre, author_firstName, author_lastName) values ('" . $_GET["Title"] . "', '" . $_GET["Genre"] . "', '" . $_GET["Author_First_Name"] . "', '" .$_GET["Author_Last_Name"] ."')";
+        echo $insert;
+        
+        echo "Inserting form data into db";
+        
+        if ($connection->query($insert) === true):
+          echo "Data inserted";
+        else:
+          echo "Data failed to insert " . $connection->error;
+        endif;
+      endif;
+      
+      echo "<h1>Here are the books already suggested by other visitors</h1>";
+      $get = "Select * from books order by genre";
+      
+      $books = $connection->query($get);
+      $genre = '';
+      if ($books->num_rows > 0):
+        while($book = $books->fetch_assoc()) {
+          if ($genre != $book["genre"]):
+            $genre = $book["genre"];
+            echo "<h2>" . $book["genre"] . "</h2>";
+          endif;
+          echo "<p>" . $book["title"] . " - " . $book["author_firstName"] ." " . $book["author_lastName"] . "</p>";
+        }
+      else:
+        echo "<p>No rows</p>";
+      endif;
     ?>
   </section>
 	<section id="mailingList">
