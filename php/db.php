@@ -13,6 +13,6 @@ $db = 'ReadingList';
 $connection = new mysqli($host, $userName, $pass, $db);
 
 //check connection
-if($connection->connect_error):
+if($connection->connect_error) {
   die('DB connection failed: ' . $connection->connect_error);
-endif;
+}

@@ -24,9 +24,9 @@ endif;
 
 $drop = "Drop table books";
 
-if($connection->query($drop)===true):
+if($connection->query($drop)===true) {
   echo "Table dropped\n";
-endif;
+}
 
 $table = "Create table books(
   id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -36,8 +36,9 @@ $table = "Create table books(
   author_lastName VARCHAR(20)
 )";
 
-if ($connection->query($table) === true):
+if ($connection->query($table) === true) {
   echo "Books table created";
-else:
+}
+else {
   echo "Table failed to build" . $connection->error;
-endif;
+}
